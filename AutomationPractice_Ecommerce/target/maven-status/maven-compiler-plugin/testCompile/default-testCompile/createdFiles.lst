@@ -1,0 +1,4 @@
+com\automationPractice\TestCases\HomePageTest.class
+com\automationPractice\TestCases\SignInTest.class
+com\automationPractice\TestCases\SearchPageTest.class
+com\automationPractice\TestCases\MyAccountsPageTest.class

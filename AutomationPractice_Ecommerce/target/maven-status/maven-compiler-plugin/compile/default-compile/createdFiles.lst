@@ -1,0 +1,9 @@
+com\automationPractice\Pages\SearchResultPage.class
+com\automationPractice\Pages\MyAccountPage.class
+com\automationPractice\Pages\MorePage.class
+com\automationPractice\BaseTest\TestBase.class
+com\automationPractice\Utilities\ExcelReader.class
+com\automationPractice\Pages\HomePage.class
+com\automationPractice\Listeners\Listeners.class
+com\automationPractice\Pages\SignInPage.class
+com\automationPractice\Listeners\ExtentManager.class

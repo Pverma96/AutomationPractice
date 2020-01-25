@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="72591" started-at="2020-01-25T19:58:11Z" finished-at="2020-01-25T19:59:24Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="72591" started-at="2020-01-25T19:58:11Z" finished-at="2020-01-25T19:59:24Z">
+      <class name="com.automationPractice.TestCases.SignInTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.automationPractice.TestCases.SignInTest@55183b20]" name="setup" is-config="true" duration-ms="6347" started-at="2020-01-25T12:59:14Z" finished-at="2020-01-25T12:59:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="doLogin()[pri:0, instance:com.automationPractice.TestCases.SignInTest@55183b20]" name="doLogin" duration-ms="2592" started-at="2020-01-25T12:59:21Z" finished-at="2020-01-25T12:59:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationPractice.TestCases.SignInTest@55183b20]" name="teardown" is-config="true" duration-ms="718" started-at="2020-01-25T12:59:23Z" finished-at="2020-01-25T12:59:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.automationPractice.TestCases.SignInTest -->
+      <class name="com.automationPractice.TestCases.HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.automationPractice.TestCases.HomePageTest@49139829]" name="setup" is-config="true" duration-ms="10388" started-at="2020-01-25T12:58:59Z" finished-at="2020-01-25T12:59:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyMoreBtn()[pri:0, instance:com.automationPractice.TestCases.HomePageTest@49139829]" name="verifyMoreBtn" duration-ms="3935" started-at="2020-01-25T12:59:09Z" finished-at="2020-01-25T12:59:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMoreBtn -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationPractice.TestCases.HomePageTest@49139829]" name="teardown" is-config="true" duration-ms="1098" started-at="2020-01-25T12:59:13Z" finished-at="2020-01-25T12:59:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.automationPractice.TestCases.HomePageTest -->
+      <class name="com.automationPractice.TestCases.SearchPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.automationPractice.TestCases.SearchPageTest@4f83df68]" name="setup" is-config="true" duration-ms="11378" started-at="2020-01-25T12:58:11Z" finished-at="2020-01-25T12:58:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLowtoHighSorting()[pri:0, instance:com.automationPractice.TestCases.SearchPageTest@4f83df68]" name="verifyLowtoHighSorting" duration-ms="22287" started-at="2020-01-25T12:58:23Z" finished-at="2020-01-25T12:58:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLowtoHighSorting -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationPractice.TestCases.SearchPageTest@4f83df68]" name="teardown" is-config="true" duration-ms="703" started-at="2020-01-25T12:58:45Z" finished-at="2020-01-25T12:58:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.automationPractice.TestCases.SearchPageTest@4f83df68]" name="setup" is-config="true" duration-ms="10992" started-at="2020-01-25T12:58:46Z" finished-at="2020-01-25T12:58:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifySortByOptions()[pri:0, instance:com.automationPractice.TestCases.SearchPageTest@4f83df68]" name="verifySortByOptions" duration-ms="1413" started-at="2020-01-25T12:58:57Z" finished-at="2020-01-25T12:58:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySortByOptions -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationPractice.TestCases.SearchPageTest@4f83df68]" name="teardown" is-config="true" duration-ms="721" started-at="2020-01-25T12:58:58Z" finished-at="2020-01-25T12:58:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.automationPractice.TestCases.SearchPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
