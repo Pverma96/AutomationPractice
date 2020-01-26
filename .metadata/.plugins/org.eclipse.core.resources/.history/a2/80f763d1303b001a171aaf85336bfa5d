@@ -1,0 +1,46 @@
+package com.toolsqa.page.locators;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import com.toolsqa.BaseTest.TestBase;
+
+public class SearchPage extends TestBase {
+	
+	
+	@FindBy(css= "input[type='search']")
+	public WebElement searchBox ;
+	
+	
+	
+	public void enterSearchValue() {
+		
+		searchBox.click();
+		searchBox.sendKeys("Dress");
+	}
+	
+	public void verifySearchResults() {
+		
+		List<WebElement> list = driver.findElements(By.xpath(""));
+		
+		for(int i =0 ; i<list.size();i++) {
+			
+			String searchText= list.get(i).getText();
+			
+			System.out.println(searchText);
+			
+			if(searchText.contains("Dress")) {
+				
+				
+			}
+			
+		}
+		
+		
+	}
+	
+
+}

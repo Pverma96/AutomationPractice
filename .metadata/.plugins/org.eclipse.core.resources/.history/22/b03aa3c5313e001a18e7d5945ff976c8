@@ -1,0 +1,36 @@
+package com.automationPractice.TestCases;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.automationPractice.BaseTest.TestBase;
+import com.automationPractice.Pages.HomePage;
+import com.automationPractice.Pages.SignInPage;
+
+public class HomePageTest extends TestBase {
+
+	HomePage homepage;
+	SignInPage signInPage;
+
+	@BeforeMethod
+	public void setup() {
+
+		initialization();
+		homepage = new HomePage();
+
+	}
+
+	/*
+	 * @Test public void navigateSignInPage() {
+	 * 
+	 * signInPage = homepage.gotoSignIn(); }
+	 */
+
+	@AfterMethod
+	public void teardown() {
+
+		quitBrowser();
+	}
+
+}

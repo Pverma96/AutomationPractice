@@ -1,0 +1,66 @@
+package com.automationPractice.Pages;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Collections;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+import com.automationPractice.BaseTest.TestBase;
+
+public class SearchResultPage extends TestBase {
+
+	@FindBy(css = "#search_query_top")
+	private WebElement searchBox;
+
+	@FindBy(css = "button[name='submit_search']")
+	private WebElement searchButton;
+
+	@FindBy(xpath = "//select[@id='selectProductSort']")
+	private WebElement sortDropdown;
+
+	@FindBy(xpath = "//div[@class='content_price col-xs-5 col-md-12']/span[@class='price product-price']")
+	private List<WebElement> productPrice;
+
+	public SearchResultPage() {
+		PageFactory.initElements(driver, this);
+	}
+
+	public void enterSearchText() {
+
+		searchBox.sendKeys("Dress");
+		searchButton.click();
+	}
+
+	public List<WebElement> check_sorting_criterion(/* List<String> strCriterion */) {
+
+		Select select = new Select(sortDropdown);
+
+		List<WebElement> list_sorting_Criterion = select.getOptions();
+
+		return list_sorting_Criterion;
+
+		/*
+		 * for( int i=0;i<list_sorting_Criterion.size();i++) {
+		 * 
+		 * if(strCriterion.equalsIgnoreCase(list_sorting_Criterion.get(i).getText()))
+		 */
+
+	}
+
+	public ArrayList<String> verifySorting() {
+
+		ArrayList<String> ObtainedPriceList = new ArrayList<String>();
+
+		for (WebElement we : productPrice) {
+
+			ObtainedPriceList.add(we.getText());
+		}
+		
+		Collections.sort(ObtainedPriceList);
+		return ObtainedPriceList;
+
+	}
+}

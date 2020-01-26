@@ -1,0 +1,43 @@
+package com.automationPractice.TestCases;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.automationPractice.BaseTest.TestBase;
+import com.automationPractice.Pages.HomePage;
+import com.automationPractice.Pages.MyAccountPage;
+import com.automationPractice.Pages.SignInPage;
+
+
+
+public class MyAccountsPageTest extends TestBase {
+	
+	HomePage homePage;
+
+	@BeforeMethod
+	public void setup() {
+
+		initialization();
+	
+
+	}
+
+//	@Test
+//	public void doLogin() {
+
+		
+	}
+
+	@AfterMethod
+	public void teardown() {
+
+		quitBrowser();
+	}
+
+		
+	}
+	
+	
+	
+

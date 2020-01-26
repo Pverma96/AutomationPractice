@@ -1,0 +1,18 @@
+package com.automationPractice.TestCases;
+
+import org.testng.annotations.BeforeMethod;
+
+import com.automationPractice.BaseTest.TestBase;
+import com.automationPractice.Pages.HomePage;
+
+
+
+public class MyAccountsPageTest extends TestBase {
+	
+	
+		
+	}
+	
+	
+	
+

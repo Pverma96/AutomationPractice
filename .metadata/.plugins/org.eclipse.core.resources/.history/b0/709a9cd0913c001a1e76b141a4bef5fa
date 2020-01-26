@@ -1,0 +1,48 @@
+package com.automationPractice.Pages;
+
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+import com.automationPractice.BaseTest.TestBase;
+
+public class SearchResultPage extends TestBase {
+
+	@FindBy(css = "#search_query_top")
+	private WebElement searchBox;
+
+	@FindBy(css = "button[name='submit_search']")
+	private WebElement searchButton;
+
+	@FindBy(id = "selectProductSort")
+	private WebElement sortDropdown;
+
+	public SearchResultPage() {
+		PageFactory.initElements(driver, this);
+	}
+
+	public void enterSearchText() {
+
+		searchBox.sendKeys("Dress");
+		searchButton.click();
+	}
+
+	public List<WebElement> select_sorting_criterion(String strCriterion) {
+
+		Select select = new Select(sortDropdown);
+
+		List<WebElement> list_sorting_Criterion = select.getOptions();
+
+		return list_sorting_Criterion;
+
+		/*
+		 * for( int i=0;i<list_sorting_Criterion.size();i++) {
+		 * 
+		 * if(strCriterion.equalsIgnoreCase(list_sorting_Criterion.get(i).getText()))
+		 */
+
+	}
+}
